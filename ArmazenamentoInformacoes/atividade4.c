@@ -7,8 +7,8 @@ struct Pessoa{
 };
 
 void atualizarAltura(struct Pessoa *p){ //A FUNÇÃO deve receber PONTEIRO, ao inves de struct pelo fato de o struct cria uma copia e o ponteiro altera no original
-    float por = p->altura / 10;
-    p->altura = p->altura + por;
+    float por = p->altura / 100;
+    p->altura = p->altura + por * 10;
 }
 
 int main(){

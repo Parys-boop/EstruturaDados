@@ -7,10 +7,8 @@ struct Pessoa{
 };
 
 int main(){
-    struct Pessoa p; //faltou colocar o apelido da struct
     struct Pessoa *pessoa;
-    pessoa = &p; //e faltou fazer essa ligação com o ponteiro
-
+    struct Pessoa *p = (struct Pessoa)malloc(sizeof(struct Pessoa));
     pessoa->idade = 20;
     pessoa -> altura = 1.75;
 }
